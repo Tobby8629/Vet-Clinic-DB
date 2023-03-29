@@ -37,3 +37,25 @@ VALUES('ditto', DATE '2022-05-14', 4, true, 22 );
 
 
 
+-- Add data to owners table 
+INSERT INTO owners(fullname, age)VALUES('sam smith', 34);
+INSERT INTO owners(fullname, age)VALUES('jennifer orwell', 19);
+INSERT INTO owners(fullname, age)VALUES('bob', 45);
+INSERT INTO owners(fullname, age)VALUES('melody pond', 77);
+INSERT INTO owners(fullname, age)VALUES('dean winchester', 14);
+INSERT INTO owners(fullname, age)VALUES(' jodie whittaker', 38);
+
+--Add data to species table 
+INSERT INTO species(name) VALUES('pokemon');
+INSERT INTO species(name) VALUES('digimon');
+
+--Update animal table for species_id to have a value
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE species_id IS NULL;
+
+--update owners table for owners_id to have a value
+UPDATE animals SET owners_id = 1 WHERE name = 'Agumon';
+UPDATE animals SET owners_id = 2 WHERE name = 'Gabumon'OR name = 'Pikachu';
+UPDATE animals SET owners_id = 3 WHERE name = 'Devimon'OR name = 'plantmon';
+UPDATE animals SET owners_id = 4 WHERE name = 'blossom'OR name = 'charmander' OR name ='squirtle';
+UPDATE animals SET owners_id = 4 WHERE name = 'angemon'OR name = 'boarmon';
