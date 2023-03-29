@@ -8,3 +8,7 @@ CREATE TABLE animals (
   weight_kg DECIMAL,
 )
 
+/* Add species to the tabble columns */
+ALTER TABLE animals ADD COLUMN species varchar(50);
+
+
