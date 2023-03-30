@@ -84,9 +84,9 @@ VALUES((SELECT id from animals where name = 'Agumon'),(SELECT id from vets where
 
 INSERT INTO visits (animals_id, vets_id, visit_date)
 VALUES((SELECT id from animals where name = 'Devimon'),(SELECT id from vets where name = 'stephanie mendez'), DATE '2021-05-04'),
-((SELECT id from animals where name = 'plantom'),(SELECT id from vets where name = 'maisy smith'), DATE '2019-12-21'),
-((SELECT id from animals where name = 'plantom'),(SELECT id from vets where name = 'maisy smith'), DATE '2021-04-07'),
-((SELECT id from animals where name = 'plantom'),(SELECT id from vets where name = 'william tatcher'), DATE '2020-08-10'),
+((SELECT id from animals where name = 'plantmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2019-12-21'),
+((SELECT id from animals where name = 'plantmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2021-04-07'),
+((SELECT id from animals where name = 'plantmon'),(SELECT id from vets where name = 'william tatcher'), DATE '2020-08-10'),
 ((SELECT id from animals where name = 'charmander'),(SELECT id from vets where name = 'jack harkness'), DATE '2021-02-24');
 
 INSERT INTO visits (animals_id, vets_id, visit_date)
@@ -97,7 +97,7 @@ VALUES((SELECT id from animals where name = 'squirtle'),(SELECT id from vets whe
 ((SELECT id from animals where name = 'angemon'),(SELECT id from vets where name = 'jack harkness'), DATE '2020-11-04');
 
 INSERT INTO visits (animals_id, vets_id, visit_date)
-VALUES((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2019-12-21'),
-((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2019-04-07'),
-((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2020-08-10'),
-((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2020-02-24');
+VALUES((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2019-01-24'),
+((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2019-05-15'),
+((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2020-02-27'),
+((SELECT id from animals where name = 'boarmon'),(SELECT id from vets where name = 'maisy smith'), DATE '2020-08-03');
