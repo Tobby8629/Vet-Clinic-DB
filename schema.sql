@@ -34,3 +34,28 @@ ALTER TABLE animals ADD COLUMN species_id BIGINT REFERENCES species (id);
 
 --Add column owner_id which is a foreign key referencing the owners table
 ALTER TABLE animals ADD COLUMN owners_id BIGINT REFERENCES owners (id);
+
+--day 4 
+ 
+ --create a table called Vet
+ CREATE TABLE vets (
+   id BIGSERIAL PRIMARY KEY,
+   name VARCHAR(60),
+   age INT,
+   date_of_graduation DATE
+ )
+
+-- create a many to many relationship between vets and species
+CREATE TABLE specialization (
+  id BIGSERIAL PRIMARY KEY,
+  species_id BIGINT REFERENCES species (id),
+  vets_id BIGINT REFERENCES vets (id)
+);
+
+--create a many to many relationship between vets and animals 
+CREATE TABLE visits (
+  id BIGSERIAL PRIMARY KEY,
+  animals_id BIGINT REFERENCES animals (id),
+  vets_id BIGINT REFERENCES vets (id),
+  visit_date DATE
+);
