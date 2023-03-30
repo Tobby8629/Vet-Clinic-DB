@@ -94,3 +94,39 @@ SELECT species, avg(escape_attempt) FROM animals WHERE date_of_birth BETWEEN DAT
 
 
 
+-- DAY #
+-- using JOIN to answer the following questions
+
+-- what animals belong to melody pond?
+ SELECT species.name, count(species.name) from species
+ join animals on animals.species_id = species.id 
+ WHERE animals.owners_id = 4 GROUP BY species.name;
+
+ --list of all animals that are pokemon ?
+ SELECT animals.name from animals 
+ join species on animals.species_id = species.id
+ WHERE animals.species_id = 1;
+
+ -- list  all owners and their animals, remember to include those that don't own any animal.
+  SELECT * from owners
+ LEFT JOIN animals on animals.owners_id = owners.id;
+
+ -- How many animals are there per species?
+ SELECT species.name, count(*) from species
+ JOIN animals ON animals.species_id = species.id
+ GROUP BY species.name;
+
+ -- List all digimon owned by jennifer orwell ?
+ SELECT * from animals
+ JOIN species ON animals.species_id = species.id
+ WHERE animals.owners_id = 2 AND animals.species_id = 2;
+
+ -- List all animals owned by Dean Winchester that haven't tried to escape.
+ SELECT * from animals
+ JOIN owners ON animals.owners_id = owners_id
+ WHERE animals.owners_id = 5 AND animals.escape_attempt = 0;
+
+ -- Who owns the most animals?
+ SELECT owners.fullname, max(animals.owners_id) from animals
+ JOIN owners ON animals.owners_id = owners.id
+ GROUP BY owners.fullname ORDER BY max DESC;
