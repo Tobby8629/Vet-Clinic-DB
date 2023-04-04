@@ -31,7 +31,7 @@
 
 **[VET_CLINIC]** is a backend project build using postgressSQL for database management system, te database contains information about animals, clients and vet clinic employee.
 
-<img src="./schema diagram.png" style= "width:450px; height:200px; align:center">
+<img src="./schema diagram.png" style= "width:500px; height:300px" align="center">
 
 ## 🛠 Built With <a name="built-with"> postgressSQL</a>
 
