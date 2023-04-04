@@ -29,7 +29,9 @@
 
 > Describe your project in 1 or 2 sentences.
 
-**[VET_CLINIC]** is a backend project build using postgressSQL for database management system, te database contains information about animals, clients and vet clinic employee
+**[VET_CLINIC]** is a backend project build using postgressSQL for database management system, te database contains information about animals, clients and vet clinic employee.
+
+<img src="./schema diagram.png" style= "width:450px; height:200px; align:center">
 
 ## 🛠 Built With <a name="built-with"> postgressSQL</a>
 
